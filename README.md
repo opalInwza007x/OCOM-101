@@ -780,9 +780,9 @@ __ตัวอย่างโจทย์ใน OTOG__
 Given a list L containing n integers, find the Range Sum Query (RSQ) between index i and j,
 inclusive, i.e. RSQ(i, j) = L[i] + L[i+1] + L[i+2] + ... + L[j]. 
 
-__Method 1 Normal Sum__
+__Method 1 Brute-Force__
 
-ถ้าเราบวกไปแบบปกติเนี่ย เขาสามารถดักมาแบบทุกคำถาม ถามถึงช่วง 0 ถึงใกล้ๆ n ตลอด จะทำให้ Time Complexity เป็น O(NQ)
+ถ้าเราบวกไปแบบปกติเนี่ย เขาสามารถดักมาแบบทุกคำถาม ถามถึงช่วง 0 ถึงใกล้ๆ N ตลอด จะทำให้ Time Complexity เป็น O(NQ)
 
 __Method 2 Quick Sum__
 
@@ -828,12 +828,63 @@ int main() {
 
 ### Maximum Contiguous Array Sum // Kadane's algorithm
 
-ภาษาไทยก็คือ ผลบวกที่มากสุดของตัวเลขที่มีตำแหน่งต่อเนื่องกัน โจทย์จะให้ array ขนาด n มาตัวนึง เช่น
+ภาษาไทยก็คือ ผลบวกที่มากสุดของตัวเลขที่มีตำแหน่งต่อเนื่องกัน โจทย์จะให้ array ขนาด N มาตัวนึง เช่น
 
 ```c++
 int arr[7] = {1, 2, 5, -3, -8, 2, -6};
 ```
 
-Maximum Contiguous Array Sum ก็คือ arr[0] + arr[1] + arr[2] = 1 + 2 + 5 = 8 เราจะไปเอา 2 ที่ index 5 ไม่ได้เพราะมันไม่ต่อเนื่อง 
+Maximum Contiguous Array Sum ก็คือ arr[0] + arr[1] + arr[2] = 1 + 2 + 5 = 8 โดยเราจะไปเอา 2 ที่ index 5 ไม่ได้เพราะมันไม่ต่อเนื่อง 
 
+__Method 1 Brute-Force__
 
+เราก็เช็คไปทุกช่วงเลย
+
+```c++
+[l, r] = index[l] + index[l + 1] + ...index[r]
+
+[0, 0] = index[0]
+[0, 1] = index[0] + index[1]
+.
+.
+.
+[0, 6] = index[0] + index[1] + ...index[6]
+
+[1, 1] = index[1]
+[1, 2] = index[1] + index[2]
+.
+.
+.
+[1, 6] = index[1] + index[2] + ...index[6]
+
+.
+.
+.
+
+เรื่อยๆจนถึง [6, 6]
+```
+
+เราก็จะใช้เวลาวนหาคำตอบ O($N^2$) แล้วก็ในนั้นหาผลบวกอีก O(N) ทำให้ Time Complexity เป็น O($N^3$)
+
+__Method 2 Brute-Force + Quick Sum__
+
+จาก Algorithm ข้างบนเรานำมาหาผลบวกล่วงหน้าได้ ทำให้ Time Complexity เหลือแค่ O($N^2$)
+
+__Method 3 Kadane's algorithm__
+
+[แปะไว้เผื่อใครอ่านของผมไม่รู้เรื่อง](https://leetcode.com/problems/maximum-subarray/solutions/1595097/java-kadane-s-algorithm-explanation-using-image/)
+
+เราสามารถลดให้เหลือแค่ O(N) ได้โดยใช้ Algorithm นี้เลยครับ
+
+```c++
+int maxSubArray(vector<int>& nums) {
+    int best = -1e9, most = -1e9;
+    for (auto e : nums) {
+        most = max(e, e + most);
+        best = max(best, most);
+    }
+    cout << best;
+}
+```
+
+ลองทดใส่กระดาษดูก็ได้นะครับ เพราะผมก็อธิบายไม่ค่อยถูก ผมจำเอาไปใช้เลยสั้นดี555
