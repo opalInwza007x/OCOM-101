@@ -4,7 +4,7 @@
 
 ปล2. ตัวฟ้าๆกดได้นะครับ เป็นเรื่องเพิ่มเติม
 
-  <h1 style="color:purple;">Hello World</h1>
+<h1 style="color:purple;">Hello World</h1>
 
 ## เปิดมาหน้าแรก แต่ละอันเอาไว้ทำไร
 
