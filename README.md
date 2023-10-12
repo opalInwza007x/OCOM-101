@@ -251,6 +251,8 @@
 
 ถ้าให้อ่านเป็นภาษาคนก็ ตั้งแต่ i = 0 จนกระทั่ง i น้อยกว่า n ค่า i จะเพิ่มขึ้นทีละ 1
 
+<img src="https://github.com/opalInwza007x/OCOM-1/assets/114739286/b639880f-b177-4ed8-9a9b-2981562a35f2" width="385px" align="center">
+
 โดย for loop สามารถทำแบบหลายๆชั้นได้ด้วย นิยมไล่เป็น i j k...
 
     for (int i = 0; i < n; ++i) {
