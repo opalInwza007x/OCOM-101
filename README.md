@@ -86,7 +86,7 @@
 
 ### cout
 
-เป็นคำสั่งพิมพ์ออกทางหน้าจอหลังจากรับ input ทั้งหมดแล้ว โดยเราจะพิมพ์ข้อความจากตัวแปรหรือคำอะไรลงไปก็ได้
+เป็นคำสั่งพิมพ์ออกทางหน้าจอ หลังจากรับ input ทั้งหมดแล้ว โดยเราจะพิมพ์ข้อความจากตัวแปรหรือคำอะไรลงไปก็ได้
 
     long long n;
     cout << "please insert n : ";
@@ -146,7 +146,7 @@
 
 ### printf
 
-เป็นคำสั่งมาจากภาษา C เหมือนกัน ก็แค่แสดงค่าที่บางทีก็สะดวกกว่า cin โดยเรายังคงใช้ format specifiers เหมือนเดิม
+เป็นคำสั่งมาจากภาษา C เหมือนกัน ก็แค่สะดวกกว่าในบางกรณี โดยเรายังคงใช้ format specifiers เหมือนเดิม
 
     ll n = 20;
     char a = 'z';
@@ -168,10 +168,16 @@
     if (condition) { // if condition == true do this!!!
         // process
     }
+    else if (condition) {
+        // process
+    }
+    else {
+        // process
+    }
 
-* ใช้ ${\color{red}if}$ ไว้อันแรกเลย ถ้าเกิด condtion เรา true จะทำ process ต่อเลย
-* ใช้ ${\color{red}else}$ ${\color{red}if}$ เอาไว้ใช้อันรองๆมา ถ้า condition ข้างบน false แล้วอันนี้ true จะทำ process ต่อเลย
-* ใช้ ${\color{red}else}$ เอาไว้ใส่อันท้ายสุด ถ้า condition ข้างบน false หมดเลย จะทำ process ต่อโดยไม่ลังเล
+* ${\color{red}if}$ ไว้อันแรกเลย ถ้าเกิด condtion เรา true จะทำ process ของย่อหน้า if เลย
+* ${\color{red}else}$ ${\color{red}if}$ เอาไว้ใช้อันรองๆมา ถ้า condition ข้างบน false แล้วอันนี้ true จะทำ process ของย่อหน้า else if นั้นๆต่อเลย
+* ${\color{red}else}$ เอาไว้ใส่อันท้ายสุด ถ้า condition ข้างบน false หมดเลย จะทำ process ของ else ต่อโดยไม่ลังเล
 
 ## Math in C++
 
