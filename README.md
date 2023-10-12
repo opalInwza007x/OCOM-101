@@ -225,7 +225,7 @@ else {
 cout << (is_prime ? "Yes" : "No");
 
 for (int i = 0; i < n; i++) {
-    int sum[i] += (i == 0 ? 0 : sum[i] - 1); // Beware index out of bounds
+    int sum[i] += (i == 0 ? 0 : sum[i - 1]); // Beware index out of bounds
 }
 ```
 
