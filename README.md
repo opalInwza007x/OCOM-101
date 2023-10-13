@@ -713,6 +713,59 @@ https://www.youtube.com/watch?v=P8Xa2BitN3I อันนี้อธิบาย
 
 ## Tips from opal_Inwza007x
 
+ต่อจากนี้คือ คำแนะนำหรือฟังก์ชันโกงๆ พวกนี้จำเอาไว้ก็ดีครับ
+
+### Basic setup
+
+```c++
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long ll;
+
+int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+
+    return 0;
+}
+```
+
+* ตรง include ถ้า memory ไม่เกินก็ยัด bits/stdc++.h ให้เลยก็ดีครับ สะดวกดี
+* typedef long long ll ก็เอามาใช้แทน int เลยก็ได้ครับ ได้ดักไว้ตอนเขาให้ค่ามามากกว่า INT_MAX ด้วย ถ้าความจำเกินอาจจะเป็นที่ Algorithm เรา หรือไม่ก็ลองเปลี่ยนเป็น typedef int ll ดูก็ได้ครับ แต่ส่วนใหญ่จะผิดที่ Algorithm
+* ตรง ios_base -> cin.tie(0) เป็นการทำให้เรา cout ไวขึ้น __คำเตือน__ จากท่านปาล์มปาล์มปาล์ม ไม่ควรใช้กับ printf scanf ไม่งั้นจะระเบิด(เพิ่มเติม scanf/printf จะดีกว่าสำหรับโจทย์ที่รับค่าเยอะๆ ส่วน ios_base + cin/cout จะดีกว่าสำหรับโจทย์ที่ปริ้นค่าเยอะๆ)
+
+
+### string input
+
+<img src="https://github.com/opalInwza007x/OCOM-1/assets/114739286/d4f87683-16f1-4dde-91b7-99d8265ce350" width="385px" align="center">
+
+สำหรับการรับค่าแบบนี้ หลายคนอาจจะทำแบบ
+
+```c++
+ll row, col;
+cin >> row >> col;
+char arr[row + 5][col + 5];
+for (int i = 0; i < row; i++) {
+    for (int j = 0; j < col; j++) {
+        cin >> arr[i][j];
+    }
+}
+```
+
+ซึ่งโค้ดก็ทำงานได้ปกติครับ แต่ว่าถ้ามี row, col เยอะมากๆจะทำให้ได้ Time Limit Exceed กลับบ้านไปแก้ แนะนำให้รับมาเป็น string ดีกว่าครับ
+
+```c++
+for (int i = 0; i < row; i++) {
+    string s;
+    cin >> s;
+    for (int j = 0; j < col; j++) {
+        arr[i][j] = s[j];
+    }
+}
+```
+
 ## Algorithms
 
 ต่อจากนี้คือ Algorithm ที่พบเจอได้บ่อยในค่าย 1 รู้ไว้ก็ดีเหมือนกันครับ :)
