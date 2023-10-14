@@ -768,6 +768,12 @@ for (int i = 0; i < row; i++) {
 }
 ```
 
+### function โกงๆ
+
+${\color{green}sort}$
+
+
+
 ## Algorithms
 
 ต่อจากนี้คือ Algorithm ที่พบเจอได้บ่อยในค่าย 1 รู้ไว้ก็ดีเหมือนกันครับ :)
