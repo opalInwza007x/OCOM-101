@@ -838,9 +838,9 @@ __(Time Complexity O(1) and Space O(1))__
     sort(arr, arr + 3, greater<int>()); // มากไปน้อย
 ```
 
-ถ้าเรียงตัวอักษรก็จะเรียงตาม ascii เลย แล้วก็เราสามารถ custom การ sort ได้ด้วย ไว้เจอกันในค่าย 2 ละกัน
+ถ้าเรียงตัวอักษรก็จะเรียงตาม ascii เลย แล้วก็เราสามารถ custom การ sort ได้ด้วย แต่ส่วนใหญ่เอาได้ใช้กับ pair ไว้เจอกันในค่าย 2 ละกัน
 
-${\color{green}__gcd(x, y)}$
+${\color{green}gcd}$
 
 __(Time Complexity O(log(min(a, b))) and Space O(log(min(a, b)))__
 
@@ -862,7 +862,7 @@ __(Time Complexity O(log(min(a, b))) and Space O(log(min(a, b)))__
     GCD(x, y) * LCM(x, y) = x * y
                 LCM(x, y) = x * y / GCD(x, y);
 
-${\color{green}binary_search}$
+
 
 __(Time Complexity O(log(n)) and Space O(1))__
 
