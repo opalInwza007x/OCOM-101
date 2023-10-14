@@ -882,7 +882,7 @@ if (binary_search(vec.begin(), vec.end(), 17)) { // false
 
 ถึงเขาจะมีฟังก์ชันให้แต่เราก็ควรที่จะเขียนเองเป็นครับ พอเอาไปประยุกต์ได้แล้วมีประโยชน์มากๆ 
 
-*${\color{green}lower_bound() && upper_bound()}$
+*${\color{green}lower_bound() }$ ${\color{green}and }$ ${\color{green}upper_bound()}$
 
 __(Time Complexity O(log(n)) and Space O(1))__
 
