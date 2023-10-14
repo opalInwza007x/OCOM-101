@@ -782,11 +782,13 @@ for (int i = 0; i < row; i++) {
 
 ### function โกงๆ
 
-${\color{green}min()}$
+ต่อจากนี้ถ้าทุกคน `include <bits/stdc++.h>` ไว้แล้วก็ไม่ต้องสนใจ `include` อื่นก็ได้ครับ
+
+${\color{green}min}$
 
 __(Time Complexity O(1) and Space O(1))__
 
-เอาไว้เทียบค่าว่าใน min ตัวไหนมีค่าน้อยกว่า โดย __ค่าที่เทียบต้องเป็น variable เดียวกัน__ ถ้าเขียนสดก็ประมาณนี้
+มาจาก `include <algorithm>` เอาไว้เทียบค่าว่าใน min ว่าตัวไหนมีค่าน้อยกว่า โดย __ค่าที่เทียบต้องเป็น variable เดียวกัน__ ถ้าเขียนสดก็ประมาณนี้
 
 ```c++
 ll min(ll x, ll y) {
@@ -802,11 +804,11 @@ ll min(ll x, ll y) {
     cout << min({a, b, c}) << "\n";
 ```
 
-${\color{green}max()}$
+${\color{green}max}$
 
 __(Time Complexity O(1) and Space O(1))__
 
-เอาไว้เทียบค่าว่าใน max ตัวไหนมีค่ามากกว่า โดย __ค่าที่เทียบต้องเป็น variable เดียวกัน__ ถ้าเขียนสดก็ประมาณนี้
+มาจาก `include <algorithm>` เอาไว้เทียบค่าว่าใน max ว่าตัวไหนมีค่ามากกว่า โดย __ค่าที่เทียบต้องเป็น variable เดียวกัน__ ถ้าเขียนสดก็ประมาณนี้
 
 ```c++
 ll max(ll x, ll y) {
@@ -822,11 +824,11 @@ ll max(ll x, ll y) {
     cout << max({a, b, c}) << "\n";
 ```
 
-${\color{green}sort()}$
+${\color{green}sort}$
 
 __(Time Complexity O(1) and Space O(1))__
 
-เอาไว้ใช้เรียงค่าได้เลย ไม่ต้องเสียเวลาไปเขียนพวก Heap sort หรือ Merge sort บลาๆๆเอง ตัวอย่างการใช้งาน
+มาจาก `include <algorithm>` เอาไว้ใช้เรียงค่าได้เลย ไม่ต้องเสียเวลาไปเขียนพวก Heap sort หรือ Merge sort บลาๆๆเอง ตัวอย่างการใช้งาน
 
 ```c++
     vector<ll> vec = {-69, 1, 2, -1, 420};
@@ -844,7 +846,7 @@ __(Time Complexity O(log(min(a, b))) and Space O(log(min(a, b)))__
 
 [เขียนสดๆได้ตามนี้](https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/)
 
-เอาไว้หาค่า GCD หรือ greatest common divisor หรือ ห.ร.ม. หรือ หารร่วมมาม นั่นเอง ตัวอย่างการใช้งาน
+มาจาก `include <algorithm>` เอาไว้หาค่า GCD หรือ greatest common divisor หรือ ห.ร.ม. หรือ หารร่วมมาม นั่นเอง ตัวอย่างการใช้งาน
 
 ```c++
     vector<ll> vec = {5, 15, 30};
@@ -860,11 +862,11 @@ __(Time Complexity O(log(min(a, b))) and Space O(log(min(a, b)))__
     GCD(x, y) * LCM(x, y) = x * y
                 LCM(x, y) = x * y / GCD(x, y);
 
-${\color{green}binary_search()}$
+${\color{green}binary_search}$
 
 __(Time Complexity O(log(n)) and Space O(1))__
 
-เป็นฟังก์ชันที่คืนค่า 0 กับ 1 ถ้าเรา binary search เจอค่านั้น ก็จะได้ 1 นอกนั้น 0
+มาจาก `include <algorithm>` เป็นฟังก์ชันที่คืนค่า 0 กับ 1 ถ้าเรา binary search เจอค่านั้น ก็จะได้ 1 นอกนั้น 0
 
 ```c++
 vector<ll> vec = {6, 7, 9, 11, 13, 15, 19}; // need to be sorted
@@ -884,7 +886,7 @@ ${\color{green}lower_bound() && upper_bound()}$
 
 __(Time Complexity O(log(n)) and Space O(1))__
 
-เหมือนอันข้างบนเลยครับ แต่จะได้ค่าตำแหน่งที่เป็น iterator แทน ยังไม่อธิบายละกันครับ ไว้เจอกันค่าย 2
+มาจาก `include <algorithm>` เหมือนอันข้างบนเลยครับ แต่จะได้ค่าตำแหน่งที่เป็น iterator แทน ยังไม่อธิบายละกันครับ ไว้เจอกันค่าย 2
 
 ```c++
 vector<ll> vec = {6, 7, 9, 11, 13, 15, 19}; // need to be sorted
