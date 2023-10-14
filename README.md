@@ -882,7 +882,7 @@ if (binary_search(vec.begin(), vec.end(), 17)) { // false
 
 ถึงเขาจะมีฟังก์ชันให้แต่เราก็ควรที่จะเขียนเองเป็นครับ พอเอาไปประยุกต์ได้แล้วมีประโยชน์มากๆ 
 
-${\color{green}lower_bound() }$ ${\color{green}and }$ ${\color{green}upper_bound()}$
+${\color{green}lower_bound }$ ${\color{green}and }$ ${\color{green}upper_bound}$
 
 __(Time Complexity O(log(n)) and Space O(1))__
 
@@ -899,6 +899,10 @@ cout << pos << "\n";
 ```
 
 ก็เหมือนเดิมครับควรที่จะเขียนเองเป็นครับ
+
+${\color{green}fill }$ ${\color{green}and }$ ${\color{green}fill_n}$
+
+fill ค่าเป็น 0 วู้วววว เดี่๋ยวมาเขียนนอนแปป
 
 ## Algorithms
 
