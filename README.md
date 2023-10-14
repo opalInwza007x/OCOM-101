@@ -784,7 +784,7 @@ for (int i = 0; i < row; i++) {
 
 ต่อจากนี้ถ้าทุกคน `include <bits/stdc++.h>` ไว้แล้วก็ไม่ต้องสนใจ `include` อื่นก็ได้ครับ
 
-${\color{green}min}$
+*${\color{green}min}$
 
 __(Time Complexity O(1) and Space O(1))__
 
@@ -804,7 +804,7 @@ ll min(ll x, ll y) {
     cout << min({a, b, c}) << "\n";
 ```
 
-${\color{green}max}$
+*${\color{green}max}$
 
 __(Time Complexity O(1) and Space O(1))__
 
@@ -824,7 +824,7 @@ ll max(ll x, ll y) {
     cout << max({a, b, c}) << "\n";
 ```
 
-${\color{green}sort}$
+*${\color{green}sort}$
 
 __(Time Complexity O(1) and Space O(1))__
 
@@ -840,7 +840,7 @@ __(Time Complexity O(1) and Space O(1))__
 
 ถ้าเรียงตัวอักษรก็จะเรียงตาม ascii เลย แล้วก็เราสามารถ custom การ sort ได้ด้วย ไว้เจอกันในค่าย 2 ละกัน
 
-${\color{green}__gcd(x, y)}$
+*${\color{green}__gcd(x, y)}$
 
 __(Time Complexity O(log(min(a, b))) and Space O(log(min(a, b)))__
 
@@ -862,7 +862,7 @@ __(Time Complexity O(log(min(a, b))) and Space O(log(min(a, b)))__
     GCD(x, y) * LCM(x, y) = x * y
                 LCM(x, y) = x * y / GCD(x, y);
 
-${\color{green}binary_search}$
+*${\color{green}binary_search}$
 
 __(Time Complexity O(log(n)) and Space O(1))__
 
@@ -882,7 +882,7 @@ if (binary_search(vec.begin(), vec.end(), 17)) { // false
 
 ถึงเขาจะมีฟังก์ชันให้แต่เราก็ควรที่จะเขียนเองเป็นครับ พอเอาไปประยุกต์ได้แล้วมีประโยชน์มากๆ 
 
-${\color{green}lower_bound() && upper_bound()}$
+*${\color{green}lower_bound() && upper_bound()}$
 
 __(Time Complexity O(log(n)) and Space O(1))__
 
