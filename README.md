@@ -841,13 +841,30 @@ ${\color{green}reverse}$
 
 __(Time Complexity O(n) and Space O(1))__
 
-มาจาก `include <algorithm>`
+มาจาก `include <algorithm>` เอาไว้ใช้กลับด้านพวก array vector ตัวอย่างการใช้งาน
+
+```c++
+    // ใครก็อป ไม่มี๊!!!
+    vector<ll> vec = {-69, 1, 2, -1, 420};
+    reverse(vec.begin(), vec.end());
+
+    int arr[3] = {-69, 1, 420};
+    reverse(arr, arr + 3);
+```
 
 ${\color{green}substr}$
 
 __(Time Complexity O(n) and Space O(n))__
 
-มาจาก `#include <string.h>`
+มาจาก `#include <string.h>` เป็นการสร้าง sub string โดยที่ไม่ต้องทำ loop ให้ซับซ้อน ตัวอย่างการใช้งาน
+
+```c++
+    string s = "among_us";
+    string s2 = s.substr(0, 5);
+    cout << s2; // among
+```
+
+โดย `s.substr(x, y)` เมื่อ x, y เป็น constant คือ เอา string มาจาก s เรื่มที่ index x และเอาไปอีก y ตัว
 
 ${\color{green}gcd}$
 
