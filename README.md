@@ -859,7 +859,7 @@ __(Time Complexity O(log(min(a, b))) and Space O(log(min(a, b)))__
     GCD(x, y) * LCM(x, y) = x * y
                 LCM(x, y) = x * y / GCD(x, y);
 
-
+${\color{green}binary_search}$
 
 __(Time Complexity O(log(n)) and Space O(1))__
 
