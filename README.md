@@ -859,7 +859,7 @@ __(Time Complexity O(log(min(a, b))) and Space O(log(min(a, b)))__
     GCD(x, y) * LCM(x, y) = x * y
                 LCM(x, y) = x * y / GCD(x, y);
 
-${\color{green}binarysearch}$
+${\color{green}binary}$ ${\color{green}search}$
 
 __(Time Complexity O(log(n)) and Space O(1))__
 
@@ -879,7 +879,7 @@ if (binary_search(vec.begin(), vec.end(), 17)) { // false
 
 ถึงเขาจะมีฟังก์ชันให้แต่เราก็ควรที่จะเขียนเองเป็นครับ พอเอาไปประยุกต์ได้แล้วมีประโยชน์มากๆ 
 
-${\color{green}lowerbound }$ ${\color{green}and }$ ${\color{green}upperbound}$
+${\color{green}lower }$ ${\color{green}bound }$ ${\color{green}and }$ ${\color{green}upper }$ ${\color{green}bound}$
 
 __(Time Complexity O(log(n)) and Space O(1))__
 
