@@ -837,6 +837,18 @@ __(Time Complexity O(1) and Space O(1))__
 
 ถ้าเรียงตัวอักษรก็จะเรียงตาม ascii เลย แล้วก็เราสามารถ custom การ sort ได้ด้วย แต่ส่วนใหญ่เอาได้ใช้กับ pair ไว้เจอกันในค่าย 2 ละกัน
 
+${\color{green}reverse}$
+
+__(Time Complexity O(n) and Space O(1))__
+
+มาจาก `include <algorithm>`
+
+${\color{green}substr}$
+
+__(Time Complexity O(n) and Space O(n))__
+
+มาจาก `#include <string.h>`
+
 ${\color{green}gcd}$
 
 __(Time Complexity O(log(min(a, b))) and Space O(log(min(a, b)))__
