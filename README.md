@@ -926,7 +926,20 @@ cout << pos << "\n";
 
 ${\color{green}fill }$ ${\color{green}and }$ ${\color{green}fill_n}$
 
-fill ค่าเป็น 0 วู้วววว เดี่๋ยวมาเขียนนอนแปป
+__(Time Complexity O(n) and Space O(1))__
+
+มาจาก `include <algorithm>` เอาไว้ใส่ค่าเข้าไปตามที่กำหนด จะได้ไม่ต้องเขียน for ใส่ค่า แล้วก็ได้ Approve จากพี่กฤษ คุ้มสุดๆ ตัวอย่างการใช้งาน
+
+```c++
+const ll maxn = 105;
+
+int main() {
+    int arr[maxn], arr2[maxn][maxn];
+    fill(arr, arr + maxn, 69);
+
+    fill_n(arr2[0], maxn * maxn, 0);
+}
+```
 
 ## Algorithms
 
