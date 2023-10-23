@@ -1120,7 +1120,7 @@ __Method 2 Brute-Force + Quick Sum__
 
 __Method 3 Kadane's algorithm__
 
-[แปะไว้เผื่อใครอ่านของผมไม่รู้เรื่อง](https://leetcode.com/problems/maximum-subarray/solutions/1595097/java-kadane-s-algorithm-explanation-using-image/)
+[แปะไว้เผื่อใครอ่านของผมไม่รู้เรื่อง](https://leetcode.com/problems/maximum-sum-circular-subarray/solutions/3066636/weird-kadane-explanation-with-images/?envType=study-plan-v2&envId=top-interview-150)
 
 เราสามารถลดให้เหลือแค่ O(N) ได้โดยใช้ Algorithm นี้เลยครับ
 
